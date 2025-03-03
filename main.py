@@ -6,7 +6,7 @@ import random
 pygame.init()
 
 # Set up display dimensions
-SCREEN_WIDTH = 800
+SCREEN_WIDTH = 900
 SCREEN_HEIGHT = 600
 
 # Create the display surface
