@@ -75,6 +75,12 @@ def game_loop():
     pipe_speed = 5  # Speed at which pipes move left
     pipes = [(SCREEN_WIDTH, random.randint(0, 350))]  # Start with one pipe at right edge
 
+    # Define user score
+    user_score = 0
+
+    # Define pipe passed state
+    passed_pipes = set()
+    
     while True:
         # Apply gravity to bird
         bird_speed += gravity
@@ -116,7 +122,7 @@ def game_loop():
         pipes = [(x, gap_pos) for x, gap_pos in pipes if x >= -50]
             
         # Add new pipe when rightmost pipe moves in enough
-        if pipes[-1][0] <= SCREEN_WIDTH - 200:  # Space pipes 300px apart
+        if pipes[-1][0] <= SCREEN_WIDTH - 300:  # Space pipes 300px apart
             pipes.append((SCREEN_WIDTH, random.randint(0, 350)))
 
         pygame.display.update()
