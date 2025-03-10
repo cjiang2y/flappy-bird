@@ -1,0 +1,27 @@
+# Ignore Python bytecode and cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore libraries and dependencies
+Library
+.venv/
+
+# Ignore image files
+*.jpg
+*.png
+*.gif
+
+# Ignore private keys and sensitive files
+privatekey
+
+# Ignore any additional local changes
+*.log
+*.tmp
+
+# Ensure other .gitignore files are not ignored
+!*.gitignore
