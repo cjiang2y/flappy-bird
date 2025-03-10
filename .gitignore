@@ -11,10 +11,6 @@ Thumbs.db
 Library
 .venv/
 
-# Ignore image files
-*.jpg
-*.png
-*.gif
 
 # Ignore private keys and sensitive files
 privatekey
